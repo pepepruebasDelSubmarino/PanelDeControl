@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Panel de prueba</title>
+
+    <!--css-->
+    <link rel="stylesheet" href="css/panel.css">
+
+    <!--scripts-->
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+    
+    <div id="Contenedor_tabla">
+        <div id="titulo">
+            <h1>Panel de control</h1>
+        </div>
+        <div id="tabla">
+            <div id="Factores">
+                <button id="agregar">agregar</button>
+                <button id="guardar">guardar</button>
+                <button id="buscar">buscar</button>
+            </div>
+            <!-- Aquí se agregarán las filas de datos -->
+            <div id="tablaAgregable">
+                <button id="salir">salir</button>
+                <div>
+                    <div class="seleccionProducto">
+                        <button class="div_Producto">Producto</button>
+                        <div class="info" style="display: none;">
+                            <button class="boton nombre">Nombre</button>
+                            <button class="boton descripcion">Descripcion</button>
+                            <button class="boton imagen">imagen</button>
+                            <button class="boton borrar">borrar</button>  
+                        </div>
+                    </div>
+                    <!--Contenedor de los formularios-->
+                    <div class="contenedor_respuesta">
+                        <form action="" method="post" onsubmit="return false;" class="form formNombre">
+                            <label for="nombre">Nombre</label><br>
+                            <input type="text" name="nombre" class="nombre"><br>
+        
+                            <input type="button" value="Cancelar">
+                            <input type="submit" value="Guardar"><br>
+                        </form>
+
+                        <form action="" method="post" onsubmit="return false;" class="form formDescripcion">
+                            <label for="descripcion">Descripcion</label><br>
+                            <input type="text" name="descripcion" class="descripcion"><br>
+        
+                            <input type="button" value="Cancelar">
+                            <input type="submit" value="Guardar"><br>
+                        </form>   
+    
+                        <form action="" method="post" onsubmit="return false;" class="form formImagen">
+                            <label for="imagen">Imagen</label><br>
+                            <input type="text" name="imagen" class="imagen"><br>
+        
+                            <input type="button" value="Cancelar">
+                            <input type="submit" value="Guardar"><br>
+                        </form>     
+                        <form action="" method="post" onsubmit="return false;" class="form formBorrar">
+                            <h2>¿Seguro que quieres borrar el producto?</h2>
+                            <input type="submit" value="Cancelar">
+                            <input type="submit" value="Borrar"><br>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+
+</body>
+</html>

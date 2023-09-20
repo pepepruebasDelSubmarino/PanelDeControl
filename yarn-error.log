@@ -1,0 +1,40 @@
+Arguments: 
+  /usr/bin/node /usr/share/yarn/bin/yarn.js add express
+
+PATH: 
+  /home/esteban/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.17.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.npm.taobao.org/express: ETIMEDOUT
+      at Timeout._onTimeout (/usr/share/yarn/lib/cli.js:141550:19)
+      at listOnTimeout (node:internal/timers:569:17)
+      at process.processTimers (node:internal/timers:512:7)
+
+npm manifest: 
+  {
+    "name": "panel",
+    "version": "0.0.2",
+    "main": "index.js",
+    "license": "MIT",
+    "description": "Es un panel de control en el cual el usuario agrega caracteristicas a un producto de su preferencia",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Esteban",
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

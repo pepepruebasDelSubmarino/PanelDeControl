@@ -1,0 +1,12 @@
+{
+  "name": "panel",
+  "version": "0.0.2",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "Es un panel de control en el cual el usuario agrega caracteristicas a un producto de su preferencia",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Esteban",
+  "private": true
+}
